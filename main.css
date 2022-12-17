@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.menu {
+    width: 30%;
+    height: 100%;
+    background-color: gray;
+}
+.card1 {
+    width: 100%;
+}
+.menu, .card1, .maruzalar {
+    display: inline-flex;
+}
+.menu ul {
+    list-style-type: none;
+    font-weight: bold;
+}
+.menu ul li {
+    width: 100%;
+    color: rgba(200, 200, 200, 0.9);
+}
+.menu ul li ul {
+    display: none;
+}
+.menu ul li:hover ul {
+    display: block;
+    color: black;
+}
+#showCard embed {
+    display: none;
+}
+video {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+
+
+
+.maruzalar {
+    width: 100%;
+    height: 500px;
+    background: black;
+}
+footer {
+    width: 100%;
+    height: 490px;
+    background-color: black;
+    color: white;
+}
+footer h1, footer p {
+    padding: 18px;
+    text-align: center;
+}
+footer h6 {
+    position: relative;
+    bottom: -300px;
+    text-align: center;
+}
+.forImage {
+    margin-left: 40%;
+}
+.forImage img {
+    width: 60px;
+    height: auto;
+    margin: 10px;
+}
+.forImage img:hover {
+    background-color: white;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+
+
+@media (max-width: 575px) {
+    .menu ul {
+        margin-left: -30px;
+    }
+    .menu ul li {
+        margin-left: 8px;
+    }
+    footer h6 {
+        bottom: -280px;
+    }
+    .forImage {
+        margin-left: 25%;
+    }
+}
